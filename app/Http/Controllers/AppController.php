@@ -118,7 +118,6 @@ class AppController extends Controller
       $detail = ImageDetails::where('image_id', $id)->first();
 
       if (!$detail) {
-          // No likes yet → create first row
           $detail = ImageDetails::create([
               'image_id'        => $id,
               'like_count'      => 1,
@@ -127,7 +126,6 @@ class AppController extends Controller
           return redirect()->route('image.details',$id);
       }
 
-      // Likes exist → update if this user hasn't liked before
       $likedUsers = $detail->liked_user_ids ?? [];
 
       if (!in_array(auth()->user()->id, $likedUsers)) {
@@ -175,7 +173,7 @@ class AppController extends Controller
     public function comment_like($id,$imageID){
       $detail = UserComment::where('id', $id)->first();
 
-      // Likes exist → update if this user hasn't liked before
+      
       $likedUsers = $detail->liked_user_ids ?? [];
 
       if (!in_array(auth()->user()->id, $likedUsers)) {
