@@ -20,7 +20,7 @@
 
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="following-tab" data-bs-toggle="tab" data-bs-target="#following" type="button" role="tab">
-                {{'Followings '.'('.count($followings).')'}}
+                {{'Following '.'('.count($followings).')'}}
             </button>
         </li>
 
