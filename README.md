@@ -1,4 +1,4 @@
-🚀 Laravel Social App
+🚀 PHP Laravel Project
 
 A full-featured, responsive social platform built with Laravel, PHP, and a modern front-end stack. Users can authenticate, create profiles, upload images, follow others, search users, and explore all content seamlessly.
 
