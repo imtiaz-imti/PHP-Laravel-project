@@ -4,7 +4,6 @@
 @section('content')
 
 <style>
-/* Responsive tweaks */
 @media (min-width: 640px) {
     .my-640-box {
         width: 70%;  /* Adjusted width on medium screens */
