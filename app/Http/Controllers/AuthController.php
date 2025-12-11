@@ -21,7 +21,7 @@ class AuthController extends Controller
 
     public function store(StoreUserRequest $request)
     {
-        // Creates the user
+        
         $user = User::create([
             'name'     => $request->name,
             'username'     => $request->username,
@@ -47,7 +47,7 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            $request->session()->regenerate(); // prevent session fixation
+            $request->session()->regenerate(); 
 
             return redirect('/');
         }
