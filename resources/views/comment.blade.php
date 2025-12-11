@@ -4,11 +4,6 @@
 @section('content')
 
 <style>
-/* ================================
-   RESPONSIVE COMMENT PAGE STYLES
-   ================================ */
-
-/* Desktop */
 .resp-box {
     width: 60%;
 }
@@ -56,7 +51,7 @@
 
 <div class="container d-flex flex-column gap-3 align-items-center">
 
-    <!-- Main Comment -->
+    
     <div class="card shadow-sm p-4 mt-2 resp-box">
         <div class="text-start">
 
@@ -92,7 +87,7 @@
         </div>
     </div>
 
-    <!-- Reply Input -->
+    
     <div class="d-flex justify-content-between mt-4 mb-3 resp-box reply-row">
 
         @if (auth()->user()->profile_photo)
@@ -115,7 +110,7 @@
     </div>
 
 
-    <!-- Child Comments List -->
+    
     @foreach($childComments as $child)
     <div class="card shadow-sm p-4 mt-2 resp-box">
         <div class="text-start">
