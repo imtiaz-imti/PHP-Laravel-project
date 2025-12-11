@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style>
-/* Responsive tweaks */
 @media (max-width: 768px) {
     .tab-content > div {
         padding: 10px;
