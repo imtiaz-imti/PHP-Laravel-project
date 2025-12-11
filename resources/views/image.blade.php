@@ -4,11 +4,6 @@
 
 @section('content')
 <style>
-/* -------------------------------
-   RESPONSIVE CUSTOM STYLES
-----------------------------------*/
-
-/* Default (Desktop) */
 .image-container,
 .like-comment-row,
 .comment-row,
